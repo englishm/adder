@@ -1,3 +1,5 @@
+#![feature(globs)]
+
 pub fn add_two(a: i32) -> i32 {
   a + 2
 }
@@ -5,7 +7,7 @@ pub fn add_two(a: i32) -> i32 {
 
 #[cfg(test)]
 mod tests {
-  use super::add_two;
+  use super::*;
 
   fn it_works() {
     assert_eq!(4, add_two(2));
