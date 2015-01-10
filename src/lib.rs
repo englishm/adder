@@ -1,5 +1,5 @@
 #[test]
 #[should_fail]
 fn it_works() {
-  assert!(false);
+  assert_eq!("Hello", "world!");
 }
